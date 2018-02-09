@@ -1,0 +1,16 @@
+<div class="question-wrapper" ng-repeat="allTrivia in allTrivias | orderBy: 'difficulty' "> <!-- 470 -->
+<h3> {{allTrivia.question}} </h3>  <!-- 47N -->
+<div >{{allTrivia.difficulty}}</div>
+<div class="gear" >
+  <img src="/styles/assets/gear.svg" alt="">
+</div>
+<ul>
+  <li ng-repeat="allTrivia in allTrivia.options"> <!-- 47E -->
+    <input type="radio">
+      <label> {{allTrivia}}</label>
+  </li>
+</ul>
+
+</div>
+
+<!-- Modal -->
